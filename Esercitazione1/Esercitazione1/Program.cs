@@ -11,7 +11,7 @@ namespace Esercitazione1
             //A questo punto, l'utente deve poter ricominciare dall'inserimento dei numeri,
             //finchè non sceglie di uscire.
             bool scelta;
-            double risultato =0;
+            double risultato = 0;
             do
             {
                 Console.WriteLine("Scegliere due numeri");
@@ -38,7 +38,7 @@ namespace Esercitazione1
                         {
                             risultato = (double)n1 / n2;
                         }
-                        else 
+                        else
                         {
                             Console.WriteLine("Non si può effettuare la divisione per 0!");
                         }
@@ -50,9 +50,12 @@ namespace Esercitazione1
                 }
 
 
-                if(operatore !="/" || n2 != 0)
-                { 
-                Console.WriteLine($"Il risultato dell'operazione fra i due numeri è {risultato}. \t {n1} {operatore} {n2} = {risultato}");
+                if (operatore != "/" || n2 != 0)
+                {
+                    if (operatore == "+" || operatore == "-" || operatore == "*" || operatore == "/")
+                    {
+                        Console.WriteLine($"Il risultato dell'operazione fra i due numeri è {risultato}. \t {n1} {operatore} {n2} = {risultato}");
+                    }
                 }
                 Console.WriteLine("Vuoi continuare? si/no");
                 string risp = Console.ReadLine();
@@ -64,11 +67,12 @@ namespace Esercitazione1
                 {
                     scelta = false;
                 }
-                else {
+                else
+                {
                     Console.WriteLine("scelta non valida.");
                     break;
                 }
-
+                Console.WriteLine("\n");
             } while (scelta);
 
         }
