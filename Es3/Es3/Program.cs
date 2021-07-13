@@ -30,6 +30,26 @@ namespace Es3
             else {
                 Console.WriteLine("Il numero è maggiore di 20");
             }
+
+
+            //Switch
+            Console.WriteLine("Inserisci un numero tra 1 e 3");
+            int num_scelto = int.Parse(Console.ReadLine());
+            switch (num_scelto) 
+            {
+                case 1:
+                    Console.WriteLine("Uno");
+                    break;
+                case 2:
+                    Console.WriteLine("Due");
+                    break;
+                case 3:
+                    Console.WriteLine("Tre");
+                    break;
+                default:
+                    Console.WriteLine("Scelta non valida");
+                    break;
+            }
         }
     }
 }
