@@ -25,6 +25,19 @@ namespace Es5
                     Console.Write($"{i}\t");
                 }
             }
+
+            Console.WriteLine("\nEsempio con break");
+            for (int i = 4; i >= 0; i--)
+            {
+                if (i == 2)
+                {
+                    break;
+                }
+                else 
+                {
+                    Console.Write($"{i}\t");
+                }
+            }
         }
     }
 }
