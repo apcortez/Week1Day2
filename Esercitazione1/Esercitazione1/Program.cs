@@ -42,9 +42,21 @@ namespace Esercitazione1
 
                 }
                 Console.WriteLine($"Il risultato dell'operazione fra i due numeri è {risultato}. \t {n1}{operatore}{n2}={risultato}");
-                Console.WriteLine("Vuoi continuare? true/false");
+                Console.WriteLine("Vuoi continuare? si/no");
                 string risp = Console.ReadLine();
-                scelta = bool.Parse(risp);
+                if (risp == "si")
+                {
+                    scelta = true;
+                }
+                else if (risp == "no")
+                {
+                    scelta = false;
+                }
+                else {
+                    Console.WriteLine("scelta non valida.");
+                    break;
+                }
+
             } while (scelta);
 
         }
