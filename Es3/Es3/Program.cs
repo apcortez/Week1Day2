@@ -32,8 +32,8 @@ namespace Es3
 
             Genere gen = Genere.femmina;
             int f = (int)gen;
-            int m = 1;
-            Genere gen1 = (Genere)m;
+            int m1 = 1;
+            Genere gen1 = (Genere)m1;
         }
     }
 
