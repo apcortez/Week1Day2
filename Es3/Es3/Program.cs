@@ -28,6 +28,18 @@ namespace Es3
             //double m = double.Parse(s1);
             double m = Convert.ToDouble(s1);
             Console.WriteLine($"String to double {m}");
+
+
+            Genere gen = Genere.femmina;
+            int f = (int)gen;
+            int m = 1;
+            Genere gen1 = (Genere)m;
         }
+    }
+
+    enum Genere
+    {   //se non metto l'assegnazione parte da 0
+        maschio = 1,
+        femmina = 2
     }
 }
