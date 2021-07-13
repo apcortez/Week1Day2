@@ -31,9 +31,9 @@ namespace Es2
             //incremento
             //k = k + 1;
             //k++;
-            k = i++; //k=3 i=3
-            k = ++i; //k=3; i=4
-            k += 3; //k =k+3
+            k = i++; //k=2 i=3
+            k = ++i; //k=4; i=4
+            k += 3; //k =k+3 = 7
         }
     }
 }
