@@ -16,7 +16,7 @@ namespace Es2
             bool z = x && y; //false
             z = x || y; //true
 
-            int i, j, k;
+            int i, j;
             i = 2;
             j = i + 1; //3
 
@@ -27,8 +27,13 @@ namespace Es2
 
             double d = (double)a / b; //d = 2.5 = risultato con la virgola, senza casting il risultato viene solo 2
 
-
-
+            int k = 23;
+            //incremento
+            //k = k + 1;
+            //k++;
+            k = i++; //k=3 i=3
+            k = ++i; //k=3; i=4
+            k += 3; //k =k+3
         }
     }
 }
