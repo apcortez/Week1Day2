@@ -38,6 +38,23 @@ namespace Es5
                     Console.Write($"{i}\t");
                 }
             }
+            
+            Console.WriteLine("Ciao mai stampato!");
+
+            Console.WriteLine("\nEsempio con return");
+            for (int i = 4; i >= 0; i--)
+            {
+                if (i == 2)
+                {
+                    return;
+                }
+                else
+                {
+                    Console.Write($"{i}\t");
+                }
+            }
+
+            Console.WriteLine("Ciao mai stampato!");
         }
     }
 }
