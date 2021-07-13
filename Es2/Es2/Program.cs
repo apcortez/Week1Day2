@@ -11,6 +11,10 @@ namespace Es2
             x = !y; //nega valore, x torna a false
             x = (18 > 9);
 
+            x = true;
+            y = false;
+            bool z = x && y; //false
+            z = x || y; //true
         }
     }
 }
