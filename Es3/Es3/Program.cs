@@ -6,40 +6,30 @@ namespace Es3
     {
         static void Main(string[] args)
         {
-            //Casting
-            int a = 2;
-            long b = a; //cast implicito
+            //Espressioni condizionali
+            Console.WriteLine("Inserisci un numero intero");
+            int number = int.Parse(Console.ReadLine());
 
-            int c;
-            long d = 9999999999;
-            //c = d; dà errore! c'è bisogno di un casting esplicito --> da un contenitore grande a un contenitore più piccolo --> potenziale perdita di informazione
-            c = (int)d;
-            //possibilità di utilizzare .Convert per numeri piccoli ma dà errore per numeri grandi (exception)
-            Console.WriteLine(c);
+            if (number > 10)
+            {
+                Console.WriteLine("Il numero è maggiore di 10");
+            }
+            else
+            {
+                Console.WriteLine("Il numero è minore o uguale a 10");
+            }
 
-            string s = "123";
-            //int n = (int)s; non si può fare il casting diretto tra un intero e una string e viceversa. C'è bisogno di un converter.
-            int n = int.Parse(s);
-            //int n = Convert.ToInt32(s);
-            Console.WriteLine(n);
-
-
-            string s1 = "3.89";
-            //double m = double.Parse(s1);
-            double m = Convert.ToDouble(s1);
-            Console.WriteLine($"String to double {m}");
-
-
-            Genere gen = Genere.femmina;
-            int f = (int)gen;
-            int m1 = 1;
-            Genere gen1 = (Genere)m1;
+            if (number <= 10 && number >= 1)
+            {
+                Console.WriteLine("Il numero inserito è compreso tra 1 e 10");
+            }
+            else if (number <= 20 && number >= 11)
+            {
+                Console.WriteLine("Il numero inserito è compreso tra 11 e 20");
+            }
+            else {
+                Console.WriteLine("Il numero è maggiore di 20");
+            }
         }
-    }
-
-    enum Genere
-    {   //se non metto l'assegnazione parte da 0
-        maschio = 1,
-        femmina = 2
     }
 }
