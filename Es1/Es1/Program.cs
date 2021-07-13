@@ -22,7 +22,7 @@ namespace Es1
             int numero = 20;
             var numero2 = 30;
             var s = "Ciao";
-            var s1 = null;
+            //var s1 = null; dà errore perche non sa il tipo 
 
         }
     }
