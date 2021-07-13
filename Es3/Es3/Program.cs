@@ -50,6 +50,22 @@ namespace Es3
                     Console.WriteLine("Scelta non valida");
                     break;
             }
+
+            Console.WriteLine("Scegli un carattere tra A e B");
+            char char_scelto = Console.ReadKey().KeyChar;
+
+            switch (char_scelto)
+            {
+                case 'A':
+                    Console.WriteLine("Hai scelto A");
+                    break;
+                case 'B':
+                    Console.WriteLine("Hai scelto B");
+                    break;
+                default:
+                    Console.WriteLine("Scelta non valida");
+                    break;
+            }
         }
     }
 }
