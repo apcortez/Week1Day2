@@ -23,7 +23,7 @@ namespace Es4
             }
 
 
-            //entra almeno una volta nel do
+            //entra almeno una volta nel do-while
             int num1;
             do
             {
