@@ -19,6 +19,7 @@ namespace Es3
             string s = "123";
             //int n = (int)s; non si può fare il casting diretto tra un intero e una string e viceversa. C'è bisogno di un converter.
             int n = int.Parse(s);
+            //int n = Convert.ToInt32(s);
             Console.WriteLine(n);
         }
     }
