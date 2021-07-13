@@ -21,7 +21,7 @@ namespace Esercitazione1
                 int n2 = int.Parse(Console.ReadLine());
                 Console.WriteLine("Inserisci l'operatore da utilizzare tra: + - * /");
                 string operatore = Console.ReadLine();
-                
+
                 switch (operatore)
                 {
                     case "+":
@@ -34,14 +34,26 @@ namespace Esercitazione1
                         risultato = n1 * n2;
                         break;
                     case "/":
-                        risultato =(double)n1 / n2;
+                        if (n2 != 0)
+                        {
+                            risultato = (double)n1 / n2;
+                        }
+                        else 
+                        {
+                            Console.WriteLine("Non si può effettuare la divisione per 0!");
+                        }
                         break;
                     default:
                         Console.WriteLine("Operatore scelto non valido");
                         break;
 
                 }
-                Console.WriteLine($"Il risultato dell'operazione fra i due numeri è {risultato}. \t {n1}{operatore}{n2}={risultato}");
+
+
+                if(operatore !="/" || n2 != 0)
+                { 
+                Console.WriteLine($"Il risultato dell'operazione fra i due numeri è {risultato}. \t {n1} {operatore} {n2} = {risultato}");
+                }
                 Console.WriteLine("Vuoi continuare? si/no");
                 string risp = Console.ReadLine();
                 if (risp == "si")
