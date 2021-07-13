@@ -12,6 +12,15 @@ namespace Es4
                 Console.WriteLine($"Valore: {i}");
             }
 
+            //Se non si sanno quante iterazioni fare e c'è una condizione --> While
+            Console.WriteLine("Inserisci un numero maggiore di 10");
+            int num = int.Parse(Console.ReadLine());
+            while (num > 10) 
+            {
+                Console.WriteLine("Errore! Inserisci un numero maggiore di 10");
+                num = int.Parse(Console.ReadLine());
+                
+            }
         }
     }
 }
