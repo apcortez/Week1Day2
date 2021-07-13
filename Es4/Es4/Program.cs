@@ -21,6 +21,17 @@ namespace Es4
                 num = int.Parse(Console.ReadLine());
                 
             }
+
+
+            //entra almeno una volta nel do
+            int num1;
+            do
+            {
+                Console.WriteLine("Inserisci un numero maggiore di 5");
+                 num1 = int.Parse(Console.ReadLine());
+
+            }
+            while (num1<5);
         }
     }
 }
